@@ -161,7 +161,7 @@
   }
 
   function download(source) {
-    var filename = "untitled";
+    var filename = window.location.pathname.substring(1,window.location.pathname.length);
 
     if (source.id) {
       filename = source.id;
